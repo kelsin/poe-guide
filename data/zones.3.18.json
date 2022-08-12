@@ -1,0 +1,769 @@
+{
+  "version": "3.18",
+  "zones": [{
+    "act": 1,
+    "tags": [],
+    "name": "The Twilight Strand",
+    "level": 1
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Coast",
+    "level": 2
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Tidal Island",
+    "level": 3
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Mud Flats",
+    "level": 4
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Fetid Pool",
+    "level": 5
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Submerged Passage",
+    "level": 5
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Flooded Depths",
+    "level": 6
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Ledge",
+    "level": 6
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Climb",
+    "level": 7
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Lower Prison",
+    "level": 8
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Upper Prison",
+    "level": 9
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "Prisoner's Gate",
+    "level": 10
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Ship Graveyard",
+    "level": 11
+  },{
+    "act": 1,
+    "tags": ["waypoint"],
+    "name": "The Cavern of Wrath",
+    "level": 12
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Ship Graveyard Cave",
+    "level": 12
+  },{
+    "act": 1,
+    "tags": [],
+    "name": "The Cavern of Anger",
+    "level": 13
+  },{
+    "act": 1,
+    "tags": ["town", "waypoint"],
+    "name": "Lioneye's Watch",
+    "level": 13
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Southern Forest",
+    "level": 13
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Old Fields",
+    "level": 14
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Den",
+    "level": 15
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Crossroads",
+    "level": 15
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Chamber of Sins Level 1",
+    "level": 15
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Riverways",
+    "level": 15
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Fellshrine Ruins",
+    "level": 16
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Broken Bridge",
+    "level": 16
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Chamber of Sins Level 2",
+    "level": 16
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Crypt Level 1",
+    "level": 17
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Western Forest",
+    "level": 17
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Weaver's Chambers",
+    "level": 18
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Crypt Level 2",
+    "level": 18
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Wetlands",
+    "level": 19
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Vaal Ruins",
+    "level": 20
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Dread Thicket",
+    "level": 21
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Northern Forest",
+    "level": 21
+  },{
+    "act": 2,
+    "tags": ["waypoint"],
+    "name": "The Caverns",
+    "level": 22
+  },{
+    "act": 2,
+    "tags": [],
+    "name": "The Ancient Pyramid",
+    "level": 23
+  },{
+    "act": 2,
+    "tags": ["town", "waypoint"],
+    "name": "The Forest Encampment",
+    "level": 23
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The City of Sarn",
+    "level": 23
+  },{
+    "act": 3,
+    "tags": [],
+    "name": "The Slums",
+    "level": 24
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Crematorium",
+    "level": 25
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Sewers",
+    "level": 26
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Marketplace",
+    "level": 26
+  },{
+    "act": 3,
+    "tags": [],
+    "name": "The Catacombs",
+    "level": 27
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Battlefront",
+    "level": 27
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Solaris Temple Level 1",
+    "level": 27
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Solaris Temple Level 2",
+    "level": 28
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Ebony Barracks",
+    "level": 29
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Lunaris Temple Level 1",
+    "level": 29
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Docks",
+    "level": 29
+  },{
+    "act": 3,
+    "tags": [],
+    "name": "The Lunaris Temple Level 2",
+    "level": 30
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Imperial Gardens",
+    "level": 30
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Library",
+    "level": 30
+  },{
+    "act": 3,
+    "tags": [],
+    "name": "The Archives",
+    "level": 31
+  },{
+    "act": 3,
+    "tags": ["waypoint"],
+    "name": "The Sceptre of God",
+    "level": 32
+  },{
+    "act": 3,
+    "tags": [],
+    "name": "The Upper Sceptre of God",
+    "level": 33
+  },{
+    "act": 3,
+    "tags": ["town", "waypoint"],
+    "name": "The Sarn Encampment",
+    "level": 33
+  },{
+    "act": 4,
+    "tags": ["waypoint"],
+    "name": "The Aqueduct",
+    "level": 33
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Dried Lake",
+    "level": 34
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Mines Level 1",
+    "level": 34
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Mines Level 2",
+    "level": 35
+  },{
+    "act": 4,
+    "tags": ["waypoint"],
+    "name": "The Crystal Veins",
+    "level": 36
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "Kaom's Dream",
+    "level": 37
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "Daresso's Dream",
+    "level": 37
+  },{
+    "act": 4,
+    "tags": ["waypoint"],
+    "name": "Kaom's Stronghold",
+    "level": 38
+  },{
+    "act": 4,
+    "tags": ["waypoint"],
+    "name": "The Grand Arena",
+    "level": 38
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Belly of the Beast Level 1",
+    "level": 38
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Belly of the Beast Level 2",
+    "level": 39
+  },{
+    "act": 4,
+    "tags": ["waypoint"],
+    "name": "The Harvest",
+    "level": 40
+  },{
+    "act": 4,
+    "tags": [],
+    "name": "The Ascent",
+    "level": 40
+  },{
+    "act": 4,
+    "tags": ["town", "waypoint"],
+    "name": "Highgate",
+    "level": 40
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Slave Pens",
+    "level": 41
+  },{
+    "act": 5,
+    "tags": [],
+    "name": "The Control Blocks",
+    "level": 41
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "Oriath Square",
+    "level": 42
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Templar Courts",
+    "level": 42
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Chamber of Innocence",
+    "level": 43
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Ruined Square",
+    "level": 44
+  },{
+    "act": 5,
+    "tags": [],
+    "name": "The Torched Courts",
+    "level": 44
+  },{
+    "act": 5,
+    "tags": [],
+    "name": "The Ossuary",
+    "level": 44
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Reliquary",
+    "level": 44
+  },{
+    "act": 5,
+    "tags": ["waypoint"],
+    "name": "The Cathedral Rooftop",
+    "level": 45
+  },{
+    "act": 5,
+    "tags": ["town", "waypoint"],
+    "name": "Overseer's Tower",
+    "level": 45
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Twilight Strand",
+    "level": 45
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Coast",
+    "level": 45
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Tidal Island",
+    "level": 45
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Mud Flats",
+    "level": 46
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Karui Fortress",
+    "level": 46
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Ridge",
+    "level": 46
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Lower Prison",
+    "level": 47
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "Shavronne's Tower",
+    "level": 47
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "Prisoner's Gate",
+    "level": 47
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Riverways",
+    "level": 48
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Wetlands",
+    "level": 48
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Western Forest",
+    "level": 48
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Southern Forest",
+    "level": 49
+  },{
+    "act": 6,
+    "tags": [],
+    "name": "The Cavern of Anger",
+    "level": 49
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Beacon",
+    "level": 49
+  },{
+    "act": 6,
+    "tags": ["waypoint"],
+    "name": "The Brine King's Reef",
+    "level": 50
+  },{
+    "act": 6,
+    "tags": ["town", "waypoint"],
+    "name": "Lioneye's Watch",
+    "level": 50
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Broken Bridge",
+    "level": 50
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Crossroads",
+    "level": 51
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Fellshrine Ruins",
+    "level": 51
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Crypt",
+    "level": 51
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Chamber of Sins Level 1",
+    "level": 52
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Chamber of Sins Level 2",
+    "level": 52
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "Maligaro's Sanctum",
+    "level": 52
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Den",
+    "level": 53
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Ashen Fields",
+    "level": 53
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Northern Forest",
+    "level": 53
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Dread Thicket",
+    "level": 53
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Causeway",
+    "level": 54
+  },{
+    "act": 7,
+    "tags": ["waypoint"],
+    "name": "The Vaal City",
+    "level": 54
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Temple of Decay Level 1",
+    "level": 54
+  },{
+    "act": 7,
+    "tags": [],
+    "name": "The Temple of Decay Level 2",
+    "level": 55
+  },{
+    "act": 7,
+    "tags": ["town", "waypoint"],
+    "name": "The Bridge Encampment",
+    "level": 55
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Sarn Ramparts",
+    "level": 55
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Toxic Conduits",
+    "level": 56
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "Doedre's Cesspool",
+    "level": 56
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Grand Promenade",
+    "level": 56
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Bath House",
+    "level": 57
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Quay",
+    "level": 57
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Grain Gate",
+    "level": 57
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Imperial Fields",
+    "level": 58
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Solaris Concourse",
+    "level": 58
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The High Gardens",
+    "level": 58
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Lunaris Concourse",
+    "level": 58
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Solaris Temple Level 1",
+    "level": 59
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Solaris Temple Level 2",
+    "level": 59
+  },{
+    "act": 8,
+    "tags": ["waypoint"],
+    "name": "The Lunaris Temple Level 1",
+    "level": 59
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Lunaris Temple Level 2",
+    "level": 59
+  },{
+    "act": 8,
+    "tags": [],
+    "name": "The Harbour Bridge",
+    "level": 60
+  },{
+    "act": 8,
+    "tags": ["town", "waypoint"],
+    "name": "The Sarn Encampment",
+    "level": 60
+  },{
+    "act": 9,
+    "tags": ["waypoint"],
+    "name": "The Blood Aqueduct",
+    "level": 61
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Descent",
+    "level": 61
+  },{
+    "act": 9,
+    "tags": ["waypoint"],
+    "name": "The Vastiri Desert",
+    "level": 61
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Oasis",
+    "level": 61
+  },{
+    "act": 9,
+    "tags": ["waypoint"],
+    "name": "The Foothills",
+    "level": 62
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Boiling Lake",
+    "level": 62
+  },{
+    "act": 9,
+    "tags": ["waypoint"],
+    "name": "The Tunnel",
+    "level": 62
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Belly of the Beast",
+    "level": 63
+  },{
+    "act": 9,
+    "tags": ["waypoint"],
+    "name": "The Quarry",
+    "level": 63
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Refinery",
+    "level": 63
+  },{
+    "act": 9,
+    "tags": [],
+    "name": "The Rotting Core",
+    "level": 64
+  },{
+    "act": 9,
+    "tags": ["town", "waypoint"],
+    "name": "Highgate",
+    "level": 67
+  },{
+    "act": 10,
+    "tags": [],
+    "name": "The Cathedral Rooftop",
+    "level": 64
+  },{
+    "act": 10,
+    "tags": ["waypoint"],
+    "name": "The Ravaged Square",
+    "level": 64
+  },{
+    "act": 10,
+    "tags": [],
+    "name": "The Torched Courts",
+    "level": 65
+  },{
+    "act": 10,
+    "tags": ["waypoint"],
+    "name": "The Desecrated Chambers",
+    "level": 65
+  },{
+    "act": 10,
+    "tags": [],
+    "name": "The Canals",
+    "level": 66
+  },{
+    "act": 10,
+    "tags": ["waypoint"],
+    "name": "The Control Blocks",
+    "level": 66
+  },{
+    "act": 10,
+    "tags": [],
+    "name": "The Feeding Trough",
+    "level": 67
+  },{
+    "act": 10,
+    "tags": ["waypoint"],
+    "name": "The Reliquary",
+    "level": 67
+  },{
+    "act": 10,
+    "tags": [],
+    "name": "The Ossuary",
+    "level": 67
+  },{
+    "act": 10,
+    "tags": ["town", "waypoint"],
+    "name": "Oriath Docks",
+    "level": 69
+  }]
+}
