@@ -1,14 +1,54 @@
 'use strict';
 const React = require('react');
-const {Text} = require('ink');
+const {Box, Text, Newline} = require('ink');
+
+const Level = ({level}) => {
+  let color = "green";
+  if (level >= 69) {
+    color = "red";
+  } else if (level >= 45) {
+    color = "yellow";
+  }
+
+  return <Text color={color}>{level}</Text>;
+};
+
+const tagLabel = tag => {
+  switch (tag) {
+  case "waypoint":
+    return "WP";
+  case "town":
+    return "T";
+  case "boss":
+    return "B";
+  default:
+    return "";
+  }
+}
+const tagColor = tag => {
+  switch (tag) {
+  case "waypoint":
+    return "blueBright";
+  case "town":
+    return "green";
+  case "boss":
+    return "red";
+  default:
+    return "default";
+  }
+}
+
 
 const Zone = ({zone}) => {
+  const tags = zone.tags.map(tag => {
+    return <Text key={tag} bold={true} color={tagColor(tag)}>{tagLabel(tag)} </Text>;
+  });
+
   return (
-      <>
-      <Text>Zone: {zone.name}</Text>
-      <Text>Act: {zone.act} Level: {zone.level}</Text>
-      <Text></Text>
-      </>
+    <Box flexDirection="column" marginBottom={1} borderStyle="round" borderColor="yellowBright">
+      <Text>{zone.name} - <Text color="gray">lv</Text><Level level={zone.level}/><Text color="gray"></Text>{zone.tags.length > 0 ? " - " : null}{tags}</Text>
+      <Text>Act <Text color="blueBright">{zone.act}</Text></Text>
+    </Box>
   );
 };
 

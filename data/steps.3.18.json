@@ -1,0 +1,41 @@
+{
+  "version": "3.18",
+  "acts": [{
+    "act": 1,
+    "steps": [{
+      "zone": "The Twilight Strand",
+      "bosses": ["Hillock"],
+      "travel": "Lioneye's Watch",
+      "note": "Skip mobs, run to end"
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Tarkleigh"],
+      "travel": "The Coast"
+    },{
+      "zone": "The Coast",
+      "waypoint": true,
+      "travel": "The Mud Flats"
+    },{
+      "zone": "The Mud Flats",
+      "travel": "The Submerged Passage",
+      "note": "Find 3 rhoa nests to get 3 glyphs"
+    },{
+      "zone": "The Submerged Passage",
+      "waypoint": true,
+      "port": "The Coast"
+    },{
+      "zone": "The Coast",
+      "travel": "Tidal Island",
+      "note": "to the right"
+    },{
+      "zone": "Tidal Island",
+      "bosses": ["Hailrake"],
+      "tp": true
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Nessa", "Tarkleight"],
+      "note": "get Quicksilver flask for leveling",
+      "port": "The Submerged Passage"
+    }]
+  }]
+}

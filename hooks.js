@@ -3,27 +3,64 @@ const config = require('./config');
 const Tail = require('tail').Tail;
 
 const {zones} = require('./data/zones.3.18.json');
+const {acts} = require('./data/steps.3.18.json');
 
-const lookupZone = (current, location) => {
+const getZone = (location, act) => {
   // Search forward
-  for (let i=current; i<zones.length; i++) {
+  for (let i=0; i<zones.length; i++) {
     const zone = zones[i];
 
-    if (zone.name === location) {
-      return i;
+    if (zone.name === location && zone.act === act) {
+      return zone;
     }
   }
+};
 
-  // Search backward
-  for (let i=(current-1); i>=0; i--) {
-    const zone = zones[i];
+const checkMovement = (act, step, location) => {
+  // Grab current data
+  const currentAct = acts[act - 1];
+  const currentStep = currentAct.steps[step];
 
-    if (zone.name === location) {
-      return i;
-    }
+  // Check next
+  let checkAct = act;
+  let checkStep = step + 1;
+
+  // Are we done with the act?
+  if (checkStep === currentAct.steps.length) {
+    checkAct = act + 1;
+    checkStep = 0;
   }
 
-  return current;
+
+  if ((checkAct - 1) < acts.length) {
+    // Check next
+    let nextStep = acts[checkAct - 1].steps[checkStep];
+    if (nextStep.zone === location) {
+      // Found it, move here
+      return { act: checkAct, step: checkStep };
+    };
+  }
+
+  // Check prev
+  checkAct = act;
+  checkStep = step - 1;
+
+  if (checkStep < 0 && act === 1) {
+    // Just stay at the beginning
+    return { act: 1, step: 0 };
+  }
+
+  if (checkStep < 0) {
+    checkAct = act - 1;
+    checkStep = acts[checkAct - 1].steps.length - 1;
+  }
+  let prevStep = acts[checkAct - 1].steps[checkStep];
+  if (prevStep.zone === location) {
+    return { act: checkAct, step: checkStep };
+  }
+
+  // Stay where we are
+  return { act, step };
 };
 
 const handlers = {};
@@ -47,20 +84,98 @@ const errorHandler = error => {
   console.log('ERROR: ', error);
 };
 
+const getNextStep = (act, step) => {
+  let nextStep = getStep(act, step + 1);
+
+  if (!nextStep) {
+    return getStep(act + 1, 0);
+  }
+
+  return nextStep;
+};
+
+const getPrevStep = (act, step) => {
+  if (step > 0) {
+    return getStep(act, step - 1);
+  }
+
+  if (act === 1) {
+    return null;
+  }
+
+  let currentAct = acts[act - 1];
+  return currentAct.steps[currentAct.steps.length - 1];
+};
+
+const getStep = (act, step) => {
+  if (act < 1 || act > acts.length) {
+    return null;
+  }
+
+  let currentAct = acts[act - 1];
+  if (step < 0 || step >= currentAct.steps.length) {
+    return null;
+  }
+
+  return currentAct.steps[step];
+};
+
+const getData = (location, act, step) => ({
+  location,
+  act,
+  step,
+  prev: getPrevStep(act, step),
+  current: getStep(act, step),
+  next: getNextStep(act, step),
+  zone: getZone(location, act)
+});
+
+const initialData = getData(zones[0].name, 1, 0);
+
 const useData = () => {
-  const [data, setData] = useState({
-    location: zones[0].name,
-    current: 0,
-    zone: zones[0]
-  });
+  const [data, setData] = useState(initialData);
+
+  const prevAct = () => {
+    if (data.act === 1) return;
+
+    setData(getData(data.location, data.act - 1, 0));
+  };
+
+  const nextAct = () => {
+    if (data.act === acts.length) return;
+
+    setData(getData(data.location, data.act + 1, 0));
+  };
+
+  const nextStep = () => {
+    if (data.step + 1 === acts[data.act - 1].steps.length) {
+      // we're at the end of the act
+      nextAct();
+      return;
+    }
+
+    setData(getData(data.location, data.act, data.step + 1));
+  };
+
+  const prevStep = () => {
+    if (data.step === 0) {
+      if (data.act === 1) return;
+
+      setData(getData(data.location, data.act - 1, acts[data.act - 2].steps.length - 1));
+      return;
+    };
+
+    setData(getData(data.location, data.act, data.step - 1));
+  };
 
   useEffect(() => {
     registerHandler("location", /.*You have entered (.*)./, (matches) => {
       const location = matches[1];
-      const current = lookupZone(data.current, location);
-      const zone = zones[current];
+      const movement = checkMovement(data.act, data.step, location);
 
-      setData({ location, current, zone });
+      if (movement.act !== data.act || movement.step !== data.step) {
+        setData(getData(location, movement.act, movement.step));
+      }
     });
 
     const tail = new Tail(config.get('log'));
@@ -75,7 +190,14 @@ const useData = () => {
     };
   });
 
-  return data;
+  return {
+    ...data,
+    nextAct,
+    prevAct,
+    nextStep,
+    prevStep
+  }
 };
 
 exports.useData = useData;
+exports.getZone = getZone;
