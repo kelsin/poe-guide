@@ -104,7 +104,7 @@ const getPrevStep = (act, step) => {
   }
 
   let currentAct = acts[act - 1];
-  return currentAct.steps[currentAct.steps.length - 1];
+  return getStep(act - 1, currentAct.steps.length - 1);
 };
 
 const getStep = (act, step) => {
@@ -117,7 +117,11 @@ const getStep = (act, step) => {
     return null;
   }
 
-  return currentAct.steps[step];
+  return {
+    ...currentAct.steps[step],
+    act,
+    step
+  };
 };
 
 const getData = (location, act, step) => ({
@@ -178,7 +182,7 @@ const useData = () => {
       }
     });
 
-    const tail = new Tail(config.get('log'));
+    const tail = new Tail(config.get('log'), {useWatchFile:true});
     tail.on("line", lineHandler);
     tail.on("error", errorHandler);
 

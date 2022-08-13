@@ -37,5 +37,338 @@
       "note": "get Quicksilver flask for leveling",
       "port": "The Submerged Passage"
     }]
+  },{
+    "act": 6,
+    "steps": [{
+      "zone": "Lioneye's Watch",
+      "travel": "The Twilight Strand"
+    },{
+      "zone": "The Twilight Strand",
+      "travel": "Lioneye's Watch",
+      "note": "Clear the zone"
+    },{
+      "zone": "Lioneye's Watch",
+      "reward": ["Lilly Roth"],
+      "travel": "The Coast"
+    },{
+      "zone": "The Coast",
+      "waypoint": true,
+      "travel": "The Mud Flats"
+    },{
+      "zone": "The Mud Flats",
+      "bosses": ["The Dishonored Queen"],
+      "note": "Take the Eye of Conquest",
+      "travel": "The Karui Fortress"
+    },{
+      "zone": "The Karui Fortress",
+      "area": "Tukohama's Keep",
+      "bosses": ["Tukohama"],
+      "rewards": ["Sin"],
+      "note": "Often in upper middle area",
+      "travel": "The Ridge"
+    },{
+      "zone": "The Ridge",
+      "waypoint": true,
+      "tp": true
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Tarkleigh"],
+      "port": "The Ridge"
+    },{
+      "zone": "The Ridge",
+      "travel": "The Lower Prison"
+    },{
+      "zone": "The Lower Prison",
+      "waypoint": true,
+      "trial": true,
+      "travel": "Shavronne's Tower"
+    },{
+      "zone": "Shavronne's Tower",
+      "area": "Prison Rooftop",
+      "bosses": ["Shavronne", "Brutus"],
+      "note": "Ascend the tower",
+      "travel": "Prisoner's Gate"
+    },{
+      "zone": "Prisoner's Gate",
+      "waypoint": true,
+      "area": "Valley of the Fire Drinker",
+      "bosses": ["Abberath"],
+      "rewards": ["Sin"],
+      "port": "Lioneye's Watch"
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Bestel"],
+      "port": "Prisoner's Gate"
+    },{
+      "zone": "Prisoner's Gate",
+      "travel": "The Western Forest"
+    },{
+      "zone": "The Western Forest",
+      "waypoint": true,
+      "note": "Follow the road to find the waypoint",
+      "travel": "The Riverways"
+    },{
+      "zone": "The Riverways",
+      "waypoint": true,
+      "note": "Follow the road to find the waypoint",
+      "travel": "The Wetlands"
+    },{
+      "zone": "The Wetlands",
+      "area": "Spawning Ground",
+      "bosses": ["Puppet Mistress"],
+      "tp": true
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Tarkleigh"],
+      "port": "The Riverways"
+    },{
+      "zone": "The Riverways",
+      "travel": "The Southern Forest"
+    },{
+      "zone": "The Southern Forest",
+      "waypoint": true,
+      "travel": "The Cavern of Anger"
+    },{
+      "zone": "The Cavern of Anger",
+      "note": "Open the Flag Chest right away",
+      "travel": "The Beacon"
+    },{
+      "zone": "The Beacon",
+      "waypoint": true,
+      "note": "Escort the totems and light the beacon, then talk to Weylam Roth",
+      "travel": "The Brine King's Reef"
+    },{
+      "zone": "The Brine King's Reef",
+      "waypoint": true,
+      "area": "Bring King's Throne",
+      "bosses": ["Tsoagoth, The Brine King"],
+      "rewards": ["Sin"],
+      "sail": "The Bridge Encampment"
+    }]
+  },{
+    "act": 7,
+    "steps": [{
+      "zone": "The Bridge Encampment",
+      "travel": "The Broken Bridge"
+    },{
+      "zone": "The Broken Bridge",
+      "travel": "The Crossroads"
+    },{
+      "zone": "The Crossroads",
+      "waypoint": true,
+      "note": "Waypoint in the center of the crossroads, The Fellshrine Ruins are to the bottom",
+      "travel": "The Fellshrine Ruins"
+    },{
+      "zone": "The Fellshrine Ruins",
+      "travel": "The Crypt"
+    },{
+      "zone": "The Crypt",
+      "waypoint": true,
+      "trial": true,
+      "note": "Find the Sarcophagus, and descend. Find Maligaro's Map.",
+      "port": "The Bridge Encampment"
+    },{
+      "zone": "The Bridge Encampment",
+      "port": "The Crossroads"
+    },{
+      "zone": "The Crossroads",
+      "travel": "The Chamber of Sins Level 1",
+      "note": "Upper path from the waypoint"
+    },{
+      "zone": "The Chamber of Sins Level 1",
+      "waypoint": true,
+      "map": "Maligaro's Sanctum"
+    },{
+      "zone": "Maligaro's Sanctum",
+      "area": "Maligaro's Workshop",
+      "bosses": ["Maligaro"],
+      "tp": true
+    },{
+      "zone": "The Chamber of Sins Level 1",
+      "rewards": ["Silk"],
+      "note": "Waypoint points in the direction of the stairs",
+      "travel": "The Chamber of Sins Level 2"
+    },{
+      "zone": "The Chamber of Sins Level 2",
+      "trial": true,
+      "travel": "The Den"
+    },{
+      "zone": "The Den",
+      "waypoint": true,
+      "travel": "The Ashen Fields"
+    },{
+      "zone": "The Ashen Fields",
+      "waypoint": true,
+      "area": "Fortress Encampment",
+      "bosses": ["Greust"],
+      "travel": "The Northern Forest"
+    },{
+      "zone": "The Northern Forest",
+      "waypoint": true,
+      "port": "The Bridge Encampment"
+    },{
+      "zone": "The Bridge Encampment",
+      "rewards": ["Helena"],
+      "port": "The Northern Forest"
+    },{
+      "zone": "The Northern Forest",
+      "note": "Look for the Azmeri Shrine",
+      "travel": "The Dread Thicket"
+    },{
+      "zone": "The Dread Thicket",
+      "area": "Den of Despair",
+      "bosses": ["Gruthkul"],
+      "note": "After boss collect 7 fireflies",
+      "port": "The Bridge Encampment"
+    },{
+      "zone": "The Bridge Encampment",
+      "rewards": ["Eramir", "Helena"],
+      "port": "The Northern Forest"
+    },{
+      "zone": "The Northern Forest",
+      "travel": "The Causeway"
+    },{
+      "zone": "The Causeway",
+      "waypoint": true,
+      "note": "Find Kishara's Star before leaving",
+      "travel": "The Vaal City"
+    },{
+      "zone": "The Vaal City",
+      "waypoint": true,
+      "note": "Locate Yeena in the middle",
+      "travel": "Temple of Decay Level 1"
+    },{
+      "zone": "The Temple of Decay Level 1",
+      "travel": "The Temple of Decay Level 2"
+    },{
+      "zone": "The Temple of Decay Level 2",
+      "area": "Arakaali's Web",
+      "bosses": ["Arakaali"],
+      "travel": "The Sarn Ramparts"
+    }]
+  },{
+    "act": 8,
+    "steps": [{
+      "zone": "The Sarn Ramparts",
+      "waypoint": true,
+      "travel": "The Sarn Encampment"
+    },{
+      "zone": "The Sarn Encampment",
+      "waypoint": true,
+      "travel": "The Toxic Conduits"
+    },{
+      "zone": "The Toxic Conduits",
+      "travel": "Doedre's Cesspool"
+    },{
+      "zone": "Doedre's Cesspool",
+      "area": "The Cauldron",
+      "bosses": ["Doedre the Vile"],
+      "waypoint": true,
+      "note": "To the right after the boss",
+      "travel": "The Quay"
+    },{
+      "zone": "The Quay",
+      "waypoint": true,
+      "note": "Find the Ankh of Eternity inside the Sealed Casket over a bridge near the start",
+      "area": "The Ressurection Site",
+      "bosses": ["Toiman"],
+      "travel": "The Grain Gate"
+    },{
+      "zone": "The Grain Gate",
+      "waypoint": true,
+      "note": "Head upwards through the zone",
+      "bosses": ["Gemling Legionaires"],
+      "travel": "The Imperial Fields"
+    },{
+      "zone": "The Imperial Fields",
+      "waypoint": true,
+      "note": "Follow the road to the waypoint",
+      "port": "The Sarn Encampment"
+    },{
+      "zone": "The Sarn Encampment",
+      "rewards": ["Clarissa", "Maramoa", "Hargan"],
+      "port": "The Imperial Fields"
+    },{
+      "zone": "The Imperial Fields",
+      "travel": "The Solaris Temple Level 1"
+    },{
+      "zone": "The Solaris Temple Level 1",
+      "waypoint": true,
+      "travel": "The Solaris Temple Level 2"
+    },{
+      "zone": "The Solaris Temple Level 2",
+      "bosses": ["Dawn"],
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "port": "The Toxic Conduits"
+    },{
+      "zone": "The Toxic Conduits",
+      "note": "Left path",
+      "travel": "The Grand Promenade"
+    },{
+      "zone": "The Grand Promenade",
+      "travel": "The Bath House"
+    },{
+      "zone": "The Bath House",
+      "waypoint": true,
+      "trial": true,
+      "travel": "The High Gardens"
+    },{
+      "zone": "The High Gardens",
+      "area": "Pools of Terror",
+      "bosses": ["Yugul"],
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "rewards": ["Hargen"],
+      "port": "The Bath House"
+    },{
+      "zone": "The Bath House",
+      "travel": "The Lunaris Concourse"
+    },{
+      "zone": "The Lunaris Concourse",
+      "waypoint": true,
+      "note": "Head north until you find the temple",
+      "travel": "The Lunaris Temple Level 1"
+    },{
+      "zone": "The Lunaris Temple Level 1",
+      "waypoint": true,
+      "travel": "The Lunaris Temple Level 2"
+    },{
+      "zone": "The Lunaris Temple Level 2",
+      "bosses": ["Dusk"],
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "port": "The Lunaris Concourse"
+    },{
+      "zone": "The Lunaris Concourse",
+      "note": "Below the waypoint",
+      "travel": "The Harbour Bridge"
+    },{
+      "zone": "The Harbour Bridge",
+      "area": "The Sky Shrine",
+      "bosses": ["Solaris", "Lunaris"],
+      "travel": "The Blood Aqueducts"
+    }]
+  },{
+    "act": 9,
+    "steps": [{
+      "zone": "The Blood Aqueducts",
+      "waypoint": true,
+      "travel": "Highgate"
+    },{
+      "zone": "Highgate",
+      "waypoint": true,
+      "travel": "The Descent"
+    },{
+      "zone": "The Descent",
+      "note": "Head to the right",
+      "travel": "The Vastiri Desert"
+    },{
+      "zone": "The Vastiri Desert",
+      "waypoint": true
+    }]
   }]
 }

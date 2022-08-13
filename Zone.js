@@ -21,6 +21,8 @@ const tagLabel = tag => {
     return "T";
   case "boss":
     return "B";
+  case "trial"
+    return "A";
   default:
     return "";
   }
@@ -33,6 +35,8 @@ const tagColor = tag => {
     return "green";
   case "boss":
     return "red";
+  case "trial":
+    return "cyan";
   default:
     return "default";
   }

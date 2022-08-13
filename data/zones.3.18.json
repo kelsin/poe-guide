@@ -47,7 +47,7 @@
     "level": 7
   },{
     "act": 1,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Lower Prison",
     "level": 8
   },{
@@ -127,12 +127,12 @@
     "level": 16
   },{
     "act": 2,
-    "tags": [],
+    "tags": ["trial"],
     "name": "The Chamber of Sins Level 2",
     "level": 16
   },{
     "act": 2,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Crypt Level 1",
     "level": 17
   },{
@@ -197,7 +197,7 @@
     "level": 24
   },{
     "act": 3,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Crematorium",
     "level": 25
   },{
@@ -212,7 +212,7 @@
     "level": 26
   },{
     "act": 3,
-    "tags": [],
+    "tags": ["trial"],
     "name": "The Catacombs",
     "level": 27
   },{
@@ -252,7 +252,7 @@
     "level": 30
   },{
     "act": 3,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Imperial Gardens",
     "level": 30
   },{
@@ -437,7 +437,7 @@
     "level": 46
   },{
     "act": 6,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Lower Prison",
     "level": 47
   },{
@@ -507,7 +507,7 @@
     "level": 51
   },{
     "act": 7,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Crypt",
     "level": 51
   },{
@@ -517,7 +517,7 @@
     "level": 52
   },{
     "act": 7,
-    "tags": [],
+    "tags": ["trial"],
     "name": "The Chamber of Sins Level 2",
     "level": 52
   },{
@@ -592,7 +592,7 @@
     "level": 56
   },{
     "act": 8,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Bath House",
     "level": 57
   },{
@@ -687,7 +687,7 @@
     "level": 62
   },{
     "act": 9,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "trial"],
     "name": "The Tunnel",
     "level": 62
   },{
@@ -757,7 +757,7 @@
     "level": 67
   },{
     "act": 10,
-    "tags": [],
+    "tags": ["trial"],
     "name": "The Ossuary",
     "level": 67
   },{

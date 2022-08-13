@@ -1,6 +1,6 @@
 'use strict';
 const React = require('react');
-const {Box, Newline, Text} = require('ink');
+const {Box, Newline, Text, Spacer} = require('ink');
 
 const {acts} = require('./data/steps.3.18.json');
 
@@ -8,9 +8,17 @@ const Step = ({step, label}) => {
   let borderStyle = "round";
   let borderColor = "gray";
   let color="gray";
+  let actLabelNode = null;
   if (!step) {
     borderStyle = undefined
+  } else {
+    actLabelNode = (
+      <Box flexDirection="row-reverse" paddingX={2}>
+        <Text><Text color={label ? "gray" : "blueBright"}>{step.act}</Text><Text color="gray">.</Text><Text color={label ? "gray" : "whiteBright"}>{step.step}</Text></Text>
+      </Box>
+    );
   }
+
   if (!label) {
     color="whiteBright";
     borderColor = "blue";
@@ -18,15 +26,20 @@ const Step = ({step, label}) => {
 
   let stepNode = null;
   if (step) {
+    let areaNode = null;
     let bossesNode = null;
     let rewardsNode = null;
     let wpNode = null;
     let goNode = null;
     let notesNode = null;
 
+    if (step && step.area) {
+      areaNode = <Text color={color}><Text color="magenta">↓</Text> Find the <Text color="magenta">{step.area}</Text></Text>;
+    }
+
     if (step && step.bosses) {
       bossesNode = step.bosses.map(boss => {
-        return <Text color={color} key={boss}><Text color="red">⚔</Text> Kill <Text color="red">{boss}</Text></Text>;
+        return <Text color={color} key={boss}><Text color="red">✕</Text> Kill <Text color="red">{boss}</Text></Text>;
       });
     }
 
@@ -59,18 +72,22 @@ const Step = ({step, label}) => {
     stepNode = (
       <>
         <Text color={color}>{step.zone}</Text>
+        {wpNode}
+        {areaNode}
         {bossesNode}
         {rewardsNode}
-        {wpNode}
-        {goNode}
         {notesNode}
+        {goNode}
       </>
     );
   }
 
   return (
-    <Box width="33%" flexDirection="column" borderColor={borderColor} borderStyle={borderStyle} paddingRight={1} marginRight={2}>
-      {stepNode}
+    <Box width="33%" flexDirection="column">
+      <Box borderColor={borderColor} borderStyle={borderStyle} paddingRight={1} marginRight={2} flexDirection="column">
+        {stepNode}
+      </Box>
+      {actLabelNode}
     </Box>
   );
 };
