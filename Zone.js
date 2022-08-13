@@ -21,8 +21,10 @@ const tagLabel = tag => {
     return "T";
   case "boss":
     return "B";
-  case "trial"
+  case "trial":
     return "A";
+  case "hideout":
+    return "H";
   default:
     return "";
   }
@@ -37,6 +39,8 @@ const tagColor = tag => {
     return "red";
   case "trial":
     return "cyan";
+  case "hideout":
+    return "magenta";
   default:
     return "default";
   }

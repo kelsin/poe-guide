@@ -757,7 +757,7 @@
     "level": 67
   },{
     "act": 10,
-    "tags": ["trial"],
+    "tags": ["trial", "hideout"],
     "name": "The Ossuary",
     "level": 67
   },{

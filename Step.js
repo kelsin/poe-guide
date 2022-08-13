@@ -61,6 +61,10 @@ const Step = ({step, label}) => {
       goNode = <Text color={color}><Text color="green">→</Text> Travel to <Text color="green">{step.travel}</Text></Text>;
     }
 
+    if (step && step.sail) {
+      goNode = <Text color={color}><Text color="greenBright">→</Text> Sail to <Text color="greenBright">{step.travel}</Text></Text>;
+    }
+
     if (step && step.tp) {
       goNode = <Text color={color}><Text color="blue">←</Text> Town Portal or Logout</Text>;
     }

@@ -222,7 +222,7 @@
       "port": "The Bridge Encampment"
     },{
       "zone": "The Bridge Encampment",
-      "rewards": ["Eramir", "Helena"],
+      "rewards": ["Eramir", "Helena", "Weylam"],
       "port": "The Northern Forest"
     },{
       "zone": "The Northern Forest",
@@ -371,7 +371,7 @@
       "waypoint": true,
       "note": "Find the Storm-Weathered Chest",
       "tp": true
-    }.{
+    },{
       "zone": "Highgate",
       "rewards": ["Petarus and Vanja", "Sin", "Petarus and Vanja"],
       "port": "The Vastiri Desert",
@@ -485,7 +485,11 @@
       "port" : "The Ravaged Square"
     },{
       "zone": "The Ravaged Square",
-      "area": "Control Blocks",
+      "travel": "The Control Blocks"
+    },{
+      "zone": "The Control Blocks",
+      "waypoint": true,
+      "area": "Arena",
       "bosses": ["Vilenta"],
       "tp": true
     },{
@@ -508,7 +512,14 @@
       "tp": true
     },{
       "zone": "Oriath Docks",
-      "rewards": "Lani"
+      "rewards": "Lani",
+      "sail": "Karui Shores"
+    }]
+  },{
+    "act": 11,
+    "steps": [{
+      "zone": "Karui Shores",
+      "note": "Grats!"
     }]
   }]
 }
