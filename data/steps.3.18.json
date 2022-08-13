@@ -368,7 +368,147 @@
       "travel": "The Vastiri Desert"
     },{
       "zone": "The Vastiri Desert",
-      "waypoint": true
+      "waypoint": true,
+      "note": "Find the Storm-Weathered Chest",
+      "tp": true
+    }.{
+      "zone": "Highgate",
+      "rewards": ["Petarus and Vanja", "Sin", "Petarus and Vanja"],
+      "port": "The Vastiri Desert",
+      "note": "Get the Bottled Storm"
+    },{
+      "zone": "The Vastiri Desert",
+      "travel": "The Oasis",
+      "note": "Using the Bottled Storm"
+    },{
+      "zone": "The Oasis",
+      "area": "Sand Pit",
+      "bosses": ["Shakari"],
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "rewards": ["Irasha"],
+      "port": "The Vastiri Desert"
+    },{
+      "zone": "The Vastirir Desert",
+      "travel": "The Foothills"
+    },{
+      "zone": "The Foothills",
+      "waypoint": true,
+      "travel": "The Boiling Lake",
+      "note": "Ussually in the upper right"
+    },{
+      "zone": "The Boiling Lake",
+      "bosses": ["Basilisk"],
+      "note": "Will see petrefied enemies",
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "port": "The Foothills"
+    },{
+      "zone": "The Foothills",
+      "note": "Usually found in the upper or upper left",
+      "travel": "The Tunnel"
+    },{
+      "zone": "The Tunnel",
+      "waypoint": true,
+      "trial": true,
+      "travel": "The Quarry"
+    },{
+      "zone": "The Quarry",
+      "waypoint": "true",
+      "note": "Waypoint is in the middle of the zone",
+      "area": "The Shrine of the Winds",
+      "bosses": "Garukhan",
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "rewards": ["Irasha"],
+      "port": "The Quarry"
+    },{
+      "zone": "The Quarry",
+      "travel": "The Refinery"
+    },{
+      "zone": "The Refinery",
+      "bosses": ["General Adus"],
+      "note": "He's in his own little area in the upper or upper left",
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "port": "The Quarry"
+    },{
+      "zone": "The Quarry",
+      "note": "Talk to Sin",
+      "travel": "The Belly of the Beast"
+    },{
+      "zone": "The Belly of the Beast",
+      "travel": "The Rotting Core"
+    },{
+      "zone": "The Rotting Core",
+      "travel": "The Black Core"
+    },{
+      "zone": "The Black Core",
+      "note": "Talk to Sin, and do each bosses portal before doing the Black Heart area",
+      "bosses": ["Shavronne", "Maligaro", "Doedre", "The Depraved Trinity"],
+      "reward": ["Lilly Roth"],
+      "sail": "Oriath Docks"
+    }]
+  },{
+    "act": 10,
+    "steps": [{
+      "zone": "Oriath Docks",
+      "waypoint": true,
+      "travel": "The Cathedral Rooftop"
+    },{
+      "zone": "The Cathedral Rooftop",
+      "area": "Cathedral Apex",
+      "note": "Apex should be close to the left from entrance. Free and talk to Bannon.",
+      "travel": "The Ravaged Square"
+    },{
+      "zone": "The Ravaged Square",
+      "waypoint": true,
+      "note": "Head up to get the waypoint, trial in the Ossuary if needed",
+      "travel": "The Torched Courts"
+    },{
+      "zone": "The Torched Courts",
+      "travel": "The Desecrated Chambers"
+    },{
+      "zone": "The Desecrated Chambers",
+      "waypoint": true,
+      "area": "Sanctum of Innocence",
+      "bosses": ["Avarius, Reassembled"],
+      "note": "Exit the area to the right",
+      "port": "Oriath Docks"
+    },{
+      "zone": "Oriath Docks",
+      "rewards": ["Bannon", "Lani"],
+      "port" : "The Ravaged Square"
+    },{
+      "zone": "The Ravaged Square",
+      "area": "Control Blocks",
+      "bosses": ["Vilenta"],
+      "tp": true
+    },{
+      "zone": "Oriath Docks",
+      "rewards": ["Lani", "Innocence"],
+      "port" : "The Ravaged Square"
+    },{
+      "zone": "The Ravaged Square",
+      "rewards": ["Innocence"],
+      "note": "Head up until you find Innocence",
+      "travel": "The Canals"
+    },{
+      "zone": "The Canals",
+      "travel": "The Feeding Trough"
+    },{
+      "zone": "The Feeding Trough",
+      "area": "Altar of Hunger",
+      "bosses": ["Kitava"],
+      "note": "Talk to Sin",
+      "tp": true
+    },{
+      "zone": "Oriath Docks",
+      "rewards": "Lani"
     }]
   }]
 }
