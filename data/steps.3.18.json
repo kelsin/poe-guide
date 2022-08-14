@@ -25,10 +25,10 @@
       "port": "The Coast"
     },{
       "zone": "The Coast",
-      "travel": "Tidal Island",
+      "travel": "The Tidal Island",
       "note": "to the right"
     },{
-      "zone": "Tidal Island",
+      "zone": "The Tidal Island",
       "bosses": ["Hailrake"],
       "tp": true
     },{
@@ -36,6 +36,283 @@
       "rewards": ["Nessa", "Tarkleight"],
       "note": "get Quicksilver flask for leveling",
       "port": "The Submerged Passage"
+    },{
+      "zone": "The Submerged Passage",
+      "travel": "The Ledge"
+    },{
+      "zone": "The Ledge",
+      "waypoint": true,
+      "travel": "The Climb"
+    },{
+      "zone": "The Climb",
+      "waypoint": true,
+      "travel": "The Lower Prison"
+    },{
+      "zone": "The Lower Prison",
+      "waypoint": "true",
+      "port": "The Submerged Passage"
+    },{
+      "zone": "The Surmerged Passage",
+      "note": "Generally near the bottom",
+      "travel": "The Flooded Depths"
+    },{
+      "zone": "The Flooded Depths",
+      "bosses": ["Deep Dweller"],
+      "tp": true
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Tarkleigh"],
+      "port": "The Lower Prison"
+    },{
+      "zone": "The Lower Prison",
+      "trial": true,
+      "travel": "The Upper Prison"
+    },{
+      "zone": "The Upper Prison",
+      "area": "The Warden's Quarters",
+      "bosses": ["Brutus"],
+      "travel": "Prisoner's Gate"
+    },{
+      "zone": "Prisoner's Gate",
+      "waypoint": true,
+      "port": "Lioneye's Watch"
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Tarkleigh"],
+      "port": "Prisoner's Gate"
+    },{
+      "zone": "Prisoner's Gate",
+      "travel": "The Ship Graveyard"
+    },{
+      "zone": "The Ship Graveyard",
+      "waypoint": true,
+      "note": "Waypoint always near the entrace",
+      "travel": "The Ship Graveyard Cave"
+    },{
+      "zone": "The Ship Graveyard Cave",
+      "note": "Retrieve the Allflame",
+      "travel": "The Ship Graveyard"
+    },{
+      "zone": "The Ship Graveyard",
+      "travel": "Cavern of Wrath"
+    },{
+      "zone": "Cavern of Wrath",
+      "waypoint": true,
+      "port": "The Ship Graveyard"
+    },{
+      "zone": "The Ship Graveyard",
+      "note": "Talk to Fairgraves and kill him near waypoint",
+      "tp": true
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Bestel", "Nessa"],
+      "port": "The Cavern of Wrath"
+    },{
+      "zone": "The Cavern of Wrath",
+      "travel": "The Cavern of Anger"
+    },{
+      "zone": "The Cavern of Anger",
+      "area": "Merveil's Lair",
+      "bosses": ["Merveil"],
+      "travel": "The Southern Forest"
+    }]
+  },{
+    "act": 2,
+    "step": [{
+      "zone": "The Southern Forest",
+      "waypoint": true,
+      "travel": "The Forest Encampment"
+    },{
+      "zone": "The Forest Encampment",
+      "waypoint": true,
+      "travel": "The Riverways"
+    },{
+      "zone": "The Riverways",
+      "waypoint": true,
+      "note": "Waypoint often in upper left, along the path",
+      "travel": "The Wetlands"
+    },{
+      "zone": "The Wetlands",
+      "bosses": ["Oak"],
+      "waypoint": true,
+      "note": "Waypoint often along the wall in the upper left",
+      "port": "The Riverways"
+    },{
+      "zone": "The Riverways",
+      "travel": "The Western Forest",
+      "note": "Follow left along the edge of the zone from the Wetlands"
+    },{
+      "zone": "The Western Forest",
+      "waypoint": true,
+      "bosses": ["Alira"],
+      "travel": "The Weaver's Chambers",
+      "note": "Run down the path in the middle of the area to waypoint. Alira is opposite site of Weaver's Chambers"
+    },{
+      "zone": "The Weaver's Chambers",
+      "area": "The Weaver's Nest",
+      "bosses": ["The Weaver"],
+      "tp": true
+    },{
+      "zone": "The Forest Encampment",
+      "rewards": ["Silk"],
+      "port": "The Western Forest"
+    },{
+      "zone": "The Western Forest",
+      "bosses": ["The Blackguards"],
+      "note": "Ussually near the bottom",
+      "tp": true
+    },{
+      "zone": "The Forest Encampment",
+      "port": "Lioneye's Watch"
+    },{
+      "zone": "Lioneye's Watch",
+      "rewards": ["Bestel"],
+      "port": "The Forest Encampment"
+    },{
+      "zone": "The Forest Encampment",
+      "travel": "The Old Fields"
+    },{
+      "zone": "The Old Fields",
+      "note": "Probably can just run through, ignoring mobs",
+      "travel": "The Crossroads"
+    },{
+      "zone": "The Crossroads",
+      "waypoint": true,
+      "note": "Find the waypoint along the path, can go trial lower right to The Felshrine Ruins if needed. Broken Bridge can be found to the upper right.",
+      "travel": "The Broken Bridge"
+    },{
+      "zone": "The Broken Bridge",
+      "bosses": ["Kraityn"],
+      "note": "Follow the right wall to find Kraityn",
+      "tp": true
+    },{
+      "zone": "The Forest Encampment",
+      "rewards": ["Eramir"],
+      "port": "The Crossroads"
+    },{
+      "zone": "The Crossroads",
+      "travel": "The Chamber of Sins Level 1",
+      "note": "Find the Chamber of Sins in the upper right"
+    },{
+      "zone": "The Chamber of Sins Level 1",
+      "waypoint": true,
+      "note": "Waypoint points in the direction of the stairs",
+      "travel": "The Chamber of Sins Level 2"
+    },{
+      "zone": "The Chamber of Sins Level 2",
+      "trial": true,
+      "bosses": ["Fidelitas"],
+      "note": "Fidelitas typicall in the upper left. Take the Baleful Gem and speak with Helena.",
+      "tp": true
+    },{
+      "zone": "The Forest Encampment",
+      "rewards": ["Greust"],
+      "port": "The Wetlands"
+    },{
+      "zone": "The Wetlands",
+      "note": "Poison the tree roots near the waypoint",
+      "travel": "The Vaal Ruins"
+    },{
+      "zone": "The Vaal Ruins",
+      "travel": "The Northern Forst"
+    },{
+      "zone": "The Northern Forst",
+      "waypoint": true,
+      "note": "Head upwards, ignore the Dread Thicket",
+      "travel": "The Caverns"
+    },{
+      "zone": "The Caverns",
+      "waypoint": true,
+      "travel": "The Ancient Pyramid"
+    },{
+      "zone": "The Ancient Pyramid",
+      "area": "Pyramid Apex",
+      "bosses": ["Vaal Oversoul"],
+      "travel": "The City of Sarn"
+    }]
+  },{
+    "act": 3,
+    "steps": [{
+      "zone": "The City of Sarn",
+      "waypoint": true,
+      "bosses": ["The Blackguards"],
+      "note": "Must rescue and talk to Clarissa",
+      "travel": "The Sarn Encampment"
+    },{
+      "zone": "The Sarn Encampment",
+      "travel": "The Slums"
+    },{
+      "zone": "The Slums",
+      "travel": "The Crematorium"
+    },{
+      "zone": "The Crematorium",
+      "waypoint": true,
+      "trial": true,
+      "bosses": ["Piety"],
+      "note": "After boss, interact with Tolman and take Tolman's Bracelet",
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "waypoint": true,
+      "rewards": ["Clarissa"],
+      "travel": "The Slums"
+    },{
+      "zone": "The Slums",
+      "note": "Find the Sewer Grating and open it",
+      "travel": "The Sewers"
+    },{
+      "zone": "The Sewers",
+      "waypoint": true,
+      "note": "Locate the three Platinum Busts. One before the waypoint and two after.",
+      "travel": "The Marketplace"
+    },{
+      "zone": "The Marketplace",
+      "waypoint": true,
+      "note": "Can enter the Catacombs to do the trial if needed",
+      "travel": "The Battlefront"
+    },{
+      "zone": "The Battlefront",
+      "waypoint": true,
+      "note": "Waypoint is generally in the center. Head down to find the Blackguard Chest and after head up to find the next zone",
+      "travel": "The Solaris Temple Level 1"
+    },{
+      "zone": "The Solaris Temple Level 1",
+      "waypoint": true,
+      "travel": "The Solaris Temple Level 2"
+    },{
+      "zone": "The Solaris Temple Level 2",
+      "waypoint": true,
+      "port": "The Battlefront"
+    },{
+      "zone": "The Battlefront",
+      "note": "Head left",
+      "travel": "The Docks"
+    },{
+      "zone": "The Docks",
+      "note": "Locate the Supply Container",
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "rewards": ["Hargen"],
+      "port": "The Solaris Temple Level 2"
+    },{
+      "zone": "The Solaris Temple Level 2",
+      "note": "Talk to Lady Dialla to recieve the Infernal Talc",
+      "port": "The Sewers"
+    },{
+      "zone": "The Sewers",
+      "note": "Head down from the waypoint to find the Undying Blockdage, always close",
+      "travel": "The Ebony Barracks"
+    },{
+      "zone": "The Ebony Barracks",
+      "waypoint": true,
+      "bosses": ["General Gravicius"],
+      "note": "Continue up after the boss",
+      "travel": "The Lunaris Temple Level 1"
+    },{
+      "zone": "The Lunaris Temple Level 1",
+      "waypoint": true,
+      "travel": "The Lunaris Temple Level 2"
     }]
   },{
     "act": 6,
