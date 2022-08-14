@@ -139,6 +139,14 @@ const initialData = getData(zones[0].name, 1, 0);
 const useData = () => {
   const [data, setData] = useState(initialData);
 
+  const firstStep = () => {
+    setData(getData(data.location, 1, 0));
+  };
+
+  const lastStep = () => {
+    setData(getData(data.location, 11, 0));
+  };
+
   const prevAct = () => {
     if (data.act === 1) return;
 
@@ -199,7 +207,9 @@ const useData = () => {
     nextAct,
     prevAct,
     nextStep,
-    prevStep
+    prevStep,
+    firstStep,
+    lastStep
   }
 };
 

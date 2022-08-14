@@ -8,7 +8,7 @@ const Step = importJsx('./Step');
 const Zone = importJsx('./Zone');
 
 const App = ({}) => {
-  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep} = useData();
+  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep, firstStep, lastStep} = useData();
 
   useInput((input, key) => {
     if (input === 'j') {
@@ -22,6 +22,12 @@ const App = ({}) => {
     }
     if (input === 'l') {
       nextAct();
+    }
+    if (input === 'b') {
+      firstStep();
+    }
+    if (input === 'e') {
+      lastStep();
     }
     if (input === 'q') {
       process.exit(0);
