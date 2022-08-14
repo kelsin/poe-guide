@@ -8,7 +8,7 @@ const Step = importJsx('./Step');
 const Zone = importJsx('./Zone');
 
 const App = ({poll}) => {
-  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep, firstStep, lastStep} = useData(poll);
+  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep, firstStep, lastStep, deaths, resetDeaths} = useData(poll);
 
   useInput((input, key) => {
     if (input === 'j') {
@@ -29,6 +29,9 @@ const App = ({poll}) => {
     if (input === 'e') {
       lastStep();
     }
+    if (input === 'r') {
+      resetDeaths();
+    }
     if (input === 'q') {
       process.exit(0);
     }
@@ -36,7 +39,7 @@ const App = ({poll}) => {
 
   return (
     <Box flexDirection="column">
-      <Zone zone={act, zone}/>
+      <Zone zone={zone} deaths={deaths}/>
       <Box flexDirection="row" justifyContent="space-around">
         <Step step={prev} label="Previous"/>
         <Step step={current}/>

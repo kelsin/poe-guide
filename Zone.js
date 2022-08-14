@@ -47,7 +47,7 @@ const tagColor = tag => {
 }
 
 
-const Zone = ({zone}) => {
+const Zone = ({zone, deaths}) => {
   const tags = zone.tags.map(tag => {
     return <Text key={tag} bold={true} color={tagColor(tag)}>{tagLabel(tag)} </Text>;
   });
@@ -56,6 +56,7 @@ const Zone = ({zone}) => {
     <Box flexDirection="column" marginBottom={1} borderStyle="round" borderColor="yellowBright">
       <Text>{zone.name} - <Text color="gray">lv</Text><Level level={zone.level}/><Text color="gray"></Text>{zone.tags.length > 0 ? " - " : null}{tags}</Text>
       <Text>Act <Text color="blueBright">{zone.act}</Text></Text>
+      <Text>Deaths <Text color="red">{deaths}</Text></Text>
     </Box>
   );
 };

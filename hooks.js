@@ -141,6 +141,7 @@ const initialData = getData(zones[0].name, 1, 0);
 
 const useData = (polling = false) => {
   const [data, setData] = useState(initialData);
+  const [deaths, setDeaths] = useState(0);
 
   const firstStep = () => {
     setData(getData(data.location, 1, 0));
@@ -183,6 +184,10 @@ const useData = (polling = false) => {
     setData(getData(data.location, data.act, data.step - 1));
   };
 
+  const resetDeaths = () => {
+    setDeaths(0);
+  };
+
   useEffect(() => {
     registerHandler("location", /.*You have entered (.*)./, (matches) => {
       const location = matches[1];
@@ -191,6 +196,10 @@ const useData = (polling = false) => {
       if (movement.act !== data.act || movement.step !== data.step) {
         setData(getData(location, movement.act, movement.step));
       }
+    });
+
+    registerHandler("deaths", /.*has been slain/, (matches) => {
+      setDeaths(deaths + 1);
     });
 
     const tail = new Tail(config.get('log'), {useWatchFile:polling, fsWatchOptions:{interval: 1000}});
@@ -212,7 +221,9 @@ const useData = (polling = false) => {
     nextStep,
     prevStep,
     firstStep,
-    lastStep
+    lastStep,
+    deaths,
+    resetDeaths
   }
 };
 
