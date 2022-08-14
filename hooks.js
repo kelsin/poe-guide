@@ -6,7 +6,6 @@ const {zones} = require('./data/zones.3.18.json');
 const {acts} = require('./data/steps.3.18.json');
 
 const getZone = (location, act) => {
-  // Search forward
   for (let i=0; i<zones.length; i++) {
     const zone = zones[i];
 
@@ -14,6 +13,8 @@ const getZone = (location, act) => {
       return zone;
     }
   }
+
+  throw `Couldn't find a zone for Act ${act}: ${location}`;
 };
 
 const checkMovement = (act, step, location) => {
@@ -30,7 +31,6 @@ const checkMovement = (act, step, location) => {
     checkAct = act + 1;
     checkStep = 0;
   }
-
 
   if ((checkAct - 1) < acts.length) {
     // Check next
@@ -103,7 +103,7 @@ const getPrevStep = (act, step) => {
     return null;
   }
 
-  let currentAct = acts[act - 1];
+  let currentAct = acts[act - 2];
   return getStep(act - 1, currentAct.steps.length - 1);
 };
 
@@ -118,25 +118,28 @@ const getStep = (act, step) => {
   }
 
   return {
-    ...currentAct.steps[step],
     act,
-    step
+    step,
+    ...currentAct.steps[step]
   };
 };
 
-const getData = (location, act, step) => ({
-  location,
-  act,
-  step,
-  prev: getPrevStep(act, step),
-  current: getStep(act, step),
-  next: getNextStep(act, step),
-  zone: getZone(location, act)
-});
+const getData = (location, act, step) => {
+  current = getStep(act, step);
+  return {
+    location,
+    act,
+    step,
+    prev: getPrevStep(act, step),
+    current: current,
+    next: getNextStep(act, step),
+    zone: getZone(current.zone, current.act || act)
+  };
+};
 
 const initialData = getData(zones[0].name, 1, 0);
 
-const useData = () => {
+const useData = (polling = false) => {
   const [data, setData] = useState(initialData);
 
   const firstStep = () => {
@@ -190,7 +193,7 @@ const useData = () => {
       }
     });
 
-    const tail = new Tail(config.get('log'), {useWatchFile:true});
+    const tail = new Tail(config.get('log'), {useWatchFile:polling, fsWatchOptions:{interval: 1000}});
     tail.on("line", lineHandler);
     tail.on("error", errorHandler);
 

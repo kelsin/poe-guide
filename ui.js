@@ -7,8 +7,8 @@ const {useData} = require('./hooks');
 const Step = importJsx('./Step');
 const Zone = importJsx('./Zone');
 
-const App = ({}) => {
-  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep, firstStep, lastStep} = useData();
+const App = ({poll}) => {
+  const {act, step, current, next, prev, zone, nextAct, prevAct, nextStep, prevStep, firstStep, lastStep} = useData(poll);
 
   useInput((input, key) => {
     if (input === 'j') {

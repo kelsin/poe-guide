@@ -8,23 +8,28 @@ const meow = require('meow');
 const ui = importJsx('./ui');
 
 const cli = meow(`
-	Usage
-	  $ poe-guide
+  Usage
+    $ poe-guide
 
-	Options
-		--name  Your name
-                --log, -l  The log file to parse
+  Options
+    --name  Your name
+    --log, -l  The log file to parse
+    --poll, -p  Use polling to read the log file
 
-	Examples
-	  $ poe-guide --name=Jane
-	  Hello, Jane
+  Examples
+    $ poe-guide --name=Jane
+    Hello, Jane
 `, {
-	flags: {
-		log: {
-			type: 'string',
-			alias: 'l'
-		}
-	}
+  flags: {
+    log: {
+      type: 'string',
+      alias: 'l'
+    },
+    poll: {
+      type: 'boolean',
+      alias: 'p'
+    }
+  }
 });
 
 if (cli.flags.log) {
@@ -32,4 +37,4 @@ if (cli.flags.log) {
 	config.set('log', cli.flags.log);
 }
 
-render(React.createElement(ui, {}));
+render(React.createElement(ui, {poll: cli.flags.poll}));

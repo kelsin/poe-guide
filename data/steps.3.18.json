@@ -52,7 +52,7 @@
       "waypoint": "true",
       "port": "The Submerged Passage"
     },{
-      "zone": "The Surmerged Passage",
+      "zone": "The Submerged Passage",
       "note": "Generally near the bottom",
       "travel": "The Flooded Depths"
     },{
@@ -94,9 +94,9 @@
       "travel": "The Ship Graveyard"
     },{
       "zone": "The Ship Graveyard",
-      "travel": "Cavern of Wrath"
+      "travel": "The Cavern of Wrath"
     },{
-      "zone": "Cavern of Wrath",
+      "zone": "The Cavern of Wrath",
       "waypoint": true,
       "port": "The Ship Graveyard"
     },{
@@ -118,7 +118,7 @@
     }]
   },{
     "act": 2,
-    "step": [{
+    "steps": [{
       "zone": "The Southern Forest",
       "waypoint": true,
       "travel": "The Forest Encampment"
@@ -166,6 +166,7 @@
       "port": "Lioneye's Watch"
     },{
       "zone": "Lioneye's Watch",
+      "act": 1,
       "rewards": ["Bestel"],
       "port": "The Forest Encampment"
     },{
@@ -214,9 +215,9 @@
       "travel": "The Vaal Ruins"
     },{
       "zone": "The Vaal Ruins",
-      "travel": "The Northern Forst"
+      "travel": "The Northern Forest"
     },{
-      "zone": "The Northern Forst",
+      "zone": "The Northern Forest",
       "waypoint": true,
       "note": "Head upwards, ignore the Dread Thicket",
       "travel": "The Caverns"
@@ -313,6 +314,222 @@
       "zone": "The Lunaris Temple Level 1",
       "waypoint": true,
       "travel": "The Lunaris Temple Level 2"
+    },{
+      "zone": "The Lunaris Temple Level 2",
+      "note": "First find the ascending staircase, then at the fork with carts, choose the single cart side",
+      "bosses": ["Piety"],
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "rewards": ["Grigor", "Maramoa"],
+      "port": "The Ebony Barracks"
+    },{
+      "zone": "The Ebony Barracks",
+      "note": "Head upper right from the waypoint",
+      "travel": "The Imperial Gardens"
+    },{
+      "zone": "The Imperial Gardens",
+      "waypoint": true,
+      "note": "Follow the tiled path to the waypoint. Then upper left at the three way fork to find the Library."
+    },{
+      "zone": "The Library",
+      "waypoint": true,
+      "note": "Find the Loose Candle",
+      "travel": "The Archives"
+    },{
+      "zone": "The Archives",
+      "note": "Collect the four golden pages",
+      "tp": true
+    },{
+      "zone": "The Sarn Encampment",
+      "port": "The Library"
+    },{
+      "zone": "The Library",
+      "rewards": ["Siosa"],
+      "port": "The Imperial Gardens"
+    },{
+      "zone": "The Imperial Gardens",
+      "trial": true,
+      "note": "Lower right at the fork above the waypoint, up the stairs, follow the path",
+      "travel": "The Sceptre of God"
+    },{
+      "zone": "The Sceptre of God",
+      "travel": "The Upper Sceptre of God"
+    },{
+      "zone": "The Upper Sceptre of God",
+      "area": "Tower Rooftop",
+      "bosses": ["Dominus"],
+      "travel": "The Aqueduct"
+    }]
+  },{
+    "act": 4,
+    "steps": [{
+      "zone": "The Aqueduct",
+      "waypoint": true,
+      "travel": "Highgate"
+    },{
+      "zone": "Highgate",
+      "waypoint": true,
+      "travel": "The Dried Lake"
+    },{
+      "zone": "The Dried Lake",
+      "bosses": ["Voll"],
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "travel": "The Mines Level 1"
+    },{
+      "zone": "The Mines Level 1",
+      "travel": "The Mines Level 2"
+    },{
+      "zone": "The Mines Level 2",
+      "note": "Locate Deshert's Spirit and release it",
+      "travel": "The Crystal Veins"
+    },{
+      "zone": "The Crystal Veins",
+      "waypoint": true,
+      "port": "Highgate"
+    },{
+      "zone": "Highgate",
+      "rewards": ["Tasuni", "Oyun"],
+      "port": "The Crystal Veins"
+    },{
+      "zone": "The Crystal Veins",
+      "travel": "Kaom's Dream"
+    },{
+      "zone": "Kaom's Dream",
+      "travel": "Kaom's Stronghold"
+    },{
+      "zone": "Kaom's Stronghold",
+      "waypoint": true,
+      "area": "Caldera of the King",
+      "bosses": ["King Kaom"],
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "port": "The Crystal Veins"
+    },{
+      "zone": "The Crystal Veins",
+      "travel": "Daresso's Dream"
+    },{
+      "zone": "Daresso's Dream",
+      "travel": "The Grand Arena"
+    },{
+      "zone": "The Grand Arena",
+      "waypoint": true,
+      "note": "Fight through the many arenas",
+      "area": "The Ring of Blades",
+      "bosses": ["Daresso"],
+      "tp": true
+    },{
+      "zone": "Highgate",
+      "port": "The Crystal Veins"
+    },{
+      "zone": "The Crystal Veins",
+      "rewards": ["Dialla"],
+      "travel": "The Belly of the Beast Level 1"
+    },{
+      "zone": "The Belly of the Beast Level 1",
+      "travel": "The Belly of the Beast Level 2"
+    },{
+      "zone": "The Belly of the Beast Level 2",
+      "area": "The Bowels of the Beast",
+      "bosses": ["Piety"],
+      "travel": "The Harvest"
+    },{
+      "zone": "The Harvest",
+      "waypoint": true,
+      "port": "Highgate"
+    },{
+      "zone": "Highgate",
+      "rewards": ["Dialla"],
+      "port": "The Harvest"
+    },{
+      "zone": "The Harvest",
+      "note": "Do each boss portal before doing the Black Heart area",
+      "bosses": ["Maligaro", "Doedre", "Shavronne", "Malachai"],
+      "area": "The Black Core",
+      "port": "Highgate"
+    },{
+      "zone": "Highgate",
+      "note": "Exit found in the upper right part of Highgate",
+      "travel": "The Ascent"
+    },{
+      "zone": "The Ascent",
+      "travel": "The Slave Pens"
+    }]
+  },{
+    "act": 5,
+    "steps": [{
+      "zone": "The Slave Pens",
+      "waypoint": true,
+      "bosses": ["Overseer Crow"],
+      "travel": "Overseer's Tower"
+    },{
+      "zone": "Overseer's Tower",
+      "waypoint": true,
+      "rewards": ["Lani"],
+      "travel": "The Control Blocks"
+    },{
+      "zone": "The Control Blocks",
+      "note": "Find the Miasmeter on the left side of the zone before the boss",
+      "bosses": ["Justicar Casticus"],
+      "travel": "Oriath Square"
+    },{
+      "zone": "Oriath Square",
+      "waypoint": true,
+      "port": "Overseer's Tower"
+    },{
+      "zone": "Overseer's Tower",
+      "rewards": ["Lani", "Vilenta"],
+      "port": "Oriath Square"
+    },{
+      "zone": "Oriath Square",
+      "travel": "The Templar Courts"
+    },{
+      "zone": "The Templar Courts",
+      "waypoint": true,
+      "travel": "The Chamber of Innocence"
+    },{
+      "zone": "The Chamber of Innocence",
+      "waypoint": true,
+      "area": "The Sanctum of Innocence",
+      "bosses": ["High Templar Avarius", "Innocence"],
+      "note": "After the boss, exit out the new door",
+      "travel": "The Torched Courts"
+    },{
+      "zone": "The Torched Courts",
+      "travel": "The Ruined Square"
+    },{
+      "zone": "The Ruined Square",
+      "waypoint": true,
+      "travel": "The Ossuary"
+    },{
+      "zone": "The Ossuary",
+      "note": "Find the Sign of Purity",
+      "travel": "The Ruined Square"
+    },{
+      "zone": "The Ruined Square",
+      "travel": "The Reliquary"
+    },{
+      "zone": "The Reliquary",
+      "waypoint": true,
+      "note": "Find Kitava's Torments",
+      "tp": true
+    },{
+      "zone": "Overseer's Tower",
+      "rewards": ["Lani"],
+      "port": "The Ruined Square"
+    },{
+      "zone": "The Ruined Square",
+      "travel": "The Cathedral Rooftop"
+    },{
+      "zone": "The Cathedral Rooftop",
+      "area": "Cathedral Apex",
+      "bosses": ["Kitava"],
+      "waypoint": true,
+      "note": "Get waypoint and speak to Lily Roth after boss",
+      "sail": "Wraeclast"
     }]
   },{
     "act": 6,
@@ -650,9 +867,9 @@
       "tp": true
     },{
       "zone": "Highgate",
-      "rewards": ["Petarus and Vanja", "Sin", "Petarus and Vanja"],
+      "rewards": ["Petarus and Vanja", "Sin"],
       "port": "The Vastiri Desert",
-      "note": "Get the Bottled Storm"
+      "note": "Talk to Petarus and Vanja again after Sin to get the Bottled Storm"
     },{
       "zone": "The Vastiri Desert",
       "travel": "The Oasis",
@@ -667,7 +884,7 @@
       "rewards": ["Irasha"],
       "port": "The Vastiri Desert"
     },{
-      "zone": "The Vastirir Desert",
+      "zone": "The Vastiri Desert",
       "travel": "The Foothills"
     },{
       "zone": "The Foothills",
@@ -696,7 +913,7 @@
       "waypoint": "true",
       "note": "Waypoint is in the middle of the zone",
       "area": "The Shrine of the Winds",
-      "bosses": "Garukhan",
+      "bosses": ["Garukhan"],
       "tp": true
     },{
       "zone": "Highgate",
@@ -722,11 +939,9 @@
       "travel": "The Rotting Core"
     },{
       "zone": "The Rotting Core",
-      "travel": "The Black Core"
-    },{
-      "zone": "The Black Core",
       "note": "Talk to Sin, and do each bosses portal before doing the Black Heart area",
       "bosses": ["Shavronne", "Maligaro", "Doedre", "The Depraved Trinity"],
+      "area": "The Black Core",
       "reward": ["Lilly Roth"],
       "sail": "Oriath Docks"
     }]
@@ -789,7 +1004,7 @@
       "tp": true
     },{
       "zone": "Oriath Docks",
-      "rewards": "Lani",
+      "rewards": ["Lani"],
       "sail": "Karui Shores"
     }]
   },{

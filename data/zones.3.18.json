@@ -162,7 +162,7 @@
     "level": 20
   },{
     "act": 2,
-    "tags": [],
+    "tags": ["hideout"],
     "name": "The Dread Thicket",
     "level": 21
   },{
@@ -202,7 +202,7 @@
     "level": 25
   },{
     "act": 3,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "hideout"],
     "name": "The Sewers",
     "level": 26
   },{
@@ -302,7 +302,7 @@
     "level": 35
   },{
     "act": 4,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "hideout"],
     "name": "The Crystal Veins",
     "level": 36
   },{
@@ -362,12 +362,12 @@
     "level": 41
   },{
     "act": 5,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "hideout"],
     "name": "Oriath Square",
     "level": 42
   },{
     "act": 5,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "hideout"],
     "name": "The Templar Courts",
     "level": 42
   },{
@@ -377,7 +377,7 @@
     "level": 43
   },{
     "act": 5,
-    "tags": ["waypoint"],
+    "tags": ["waypoint", "hideout"],
     "name": "The Ruined Square",
     "level": 44
   },{
@@ -472,7 +472,7 @@
     "level": 49
   },{
     "act": 6,
-    "tags": [],
+    "tags": ["hideout"],
     "name": "The Cavern of Anger",
     "level": 49
   },{
@@ -517,7 +517,7 @@
     "level": 52
   },{
     "act": 7,
-    "tags": ["trial"],
+    "tags": ["trial", "hideout"],
     "name": "The Chamber of Sins Level 2",
     "level": 52
   },{
@@ -658,7 +658,7 @@
   },{
     "act": 9,
     "tags": ["waypoint"],
-    "name": "The Blood Aqueduct",
+    "name": "The Blood Aqueducts",
     "level": 61
   },{
     "act": 9,
@@ -672,7 +672,7 @@
     "level": 61
   },{
     "act": 9,
-    "tags": [],
+    "tags": ["hideout"],
     "name": "The Oasis",
     "level": 61
   },{
@@ -765,5 +765,10 @@
     "tags": ["town", "waypoint"],
     "name": "Oriath Docks",
     "level": 69
+  },{
+    "act": 11,
+    "tags": ["town", "waypoint"],
+    "name": "Karui Shores",
+    "level": 70
   }]
 }
