@@ -563,7 +563,7 @@
     },{
       "zone": "The Ridge",
       "waypoint": true,
-      "tp": true
+      "port": "Lioneye's Watch"
     },{
       "zone": "Lioneye's Watch",
       "rewards": ["Tarkleigh"],
@@ -580,7 +580,7 @@
       "zone": "Shavronne's Tower",
       "area": "Prison Rooftop",
       "bosses": ["Shavronne", "Brutus"],
-      "note": "Ascend the tower",
+      "note": "Ascend the tower, and leave towards the Warden's Quarters after the bosses",
       "travel": "Prisoner's Gate"
     },{
       "zone": "Prisoner's Gate",
@@ -588,7 +588,7 @@
       "area": "Valley of the Fire Drinker",
       "bosses": ["Abberath"],
       "rewards": ["Sin"],
-      "port": "Lioneye's Watch"
+      "tp": true
     },{
       "zone": "Lioneye's Watch",
       "rewards": ["Bestel"],
@@ -630,7 +630,7 @@
       "zone": "The Beacon",
       "waypoint": true,
       "note": "Escort the totems and light the beacon, then talk to Weylam Roth",
-      "travel": "The Brine King's Reef"
+      "sail": "The Brine King's Reef"
     },{
       "zone": "The Brine King's Reef",
       "waypoint": true,
@@ -643,35 +643,39 @@
     "act": 7,
     "steps": [{
       "zone": "The Bridge Encampment",
+      "waypoint": true,
       "travel": "The Broken Bridge"
     },{
       "zone": "The Broken Bridge",
+      "note": "Follow the road",
       "travel": "The Crossroads"
     },{
       "zone": "The Crossroads",
       "waypoint": true,
-      "note": "Waypoint in the center of the crossroads, The Fellshrine Ruins are to the bottom",
+      "note": "Waypoint in the center of the crossroads, The Fellshrine Ruins are to the bottom right",
       "travel": "The Fellshrine Ruins"
     },{
       "zone": "The Fellshrine Ruins",
+      "note": "Follow the road",
       "travel": "The Crypt"
     },{
       "zone": "The Crypt",
       "waypoint": true,
       "trial": true,
       "note": "Find the Sarcophagus, and descend. Find Maligaro's Map.",
-      "port": "The Bridge Encampment"
+      "tp": true
     },{
       "zone": "The Bridge Encampment",
       "port": "The Crossroads"
     },{
       "zone": "The Crossroads",
       "travel": "The Chamber of Sins Level 1",
-      "note": "Upper path from the waypoint"
+      "note": "Upper left path from the waypoint"
     },{
       "zone": "The Chamber of Sins Level 1",
       "waypoint": true,
-      "map": "Maligaro's Sanctum"
+      "notes": "Put Maligaro's Map into the map device near the waypoint",
+      "port": "Maligaro's Sanctum"
     },{
       "zone": "Maligaro's Sanctum",
       "area": "Maligaro's Workshop",
@@ -712,11 +716,11 @@
       "zone": "The Dread Thicket",
       "area": "Den of Despair",
       "bosses": ["Gruthkul"],
-      "note": "After boss collect 7 fireflies",
-      "port": "The Bridge Encampment"
+      "note": "Collect 7 fireflies",
+      "tp": true
     },{
       "zone": "The Bridge Encampment",
-      "rewards": ["Eramir", "Helena", "Weylam"],
+      "rewards": ["Eramir", "Helena"],
       "port": "The Northern Forest"
     },{
       "zone": "The Northern Forest",
@@ -730,6 +734,13 @@
       "zone": "The Vaal City",
       "waypoint": true,
       "note": "Locate Yeena in the middle",
+      "port": "The Bridge Encampment"
+    },{
+      "zone": "The Bridge Encampment",
+      "rewards": ["Weylam"],
+      "port": "The Vaal City"
+    },{
+      "zone": "The Vaal City",
       "travel": "Temple of Decay Level 1"
     },{
       "zone": "The Temple of Decay Level 1",
@@ -758,11 +769,10 @@
       "area": "The Cauldron",
       "bosses": ["Doedre the Vile"],
       "waypoint": true,
-      "note": "To the right after the boss",
+      "note": "To the upper right after the boss",
       "travel": "The Quay"
     },{
       "zone": "The Quay",
-      "waypoint": true,
       "note": "Find the Ankh of Eternity inside the Sealed Casket over a bridge near the start",
       "area": "The Ressurection Site",
       "bosses": ["Toiman"],
@@ -797,7 +807,7 @@
       "zone": "The Sarn Encampment",
       "port": "The Toxic Conduits"
     },{
-      "zone": "The Toxic Conduits",
+      "zone": "Doedre's Cesspool",
       "note": "Left path",
       "travel": "The Grand Promenade"
     },{
@@ -844,12 +854,12 @@
       "zone": "The Harbour Bridge",
       "area": "The Sky Shrine",
       "bosses": ["Solaris", "Lunaris"],
-      "travel": "The Blood Aqueducts"
+      "travel": "The Blood Aqueduct"
     }]
   },{
     "act": 9,
     "steps": [{
-      "zone": "The Blood Aqueducts",
+      "zone": "The Blood Aqueduct",
       "waypoint": true,
       "travel": "Highgate"
     },{
