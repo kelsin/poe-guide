@@ -32,7 +32,7 @@ const tagLabel = tag => {
 const tagColor = tag => {
   switch (tag) {
   case "waypoint":
-    return "blueBright";
+    return "blue";
   case "town":
     return "green";
   case "boss":
@@ -48,7 +48,8 @@ const tagColor = tag => {
 
 
 const Zone = ({zone, deaths}) => {
-  const tags = zone.tags.map(tag => {
+  const zoneTags = [...zone.tags].sort((a,b) => tagLabel(a).localeCompare(tagLabel(b)));
+  const tags = zoneTags.map(tag => {
     return <Text key={tag} bold={true} color={tagColor(tag)}>{tagLabel(tag)} </Text>;
   });
 
