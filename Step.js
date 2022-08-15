@@ -55,7 +55,7 @@ const Step = ({step, label}) => {
     }
 
     if (step && step.trial) {
-      trialNode = <Text color={color}><Text color="cyan">⬤</Text> Do the <Text color="cyan">ascendency trial</Text> if needed</Text>;
+      trialNode = <Text color={color}><Text color="cyan">↑</Text> Do the <Text color="cyan">ascendency trial</Text> if needed</Text>;
     }
 
     if (step && step.port) {
