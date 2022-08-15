@@ -51,7 +51,7 @@ const Step = ({step, label}) => {
     }
 
     if (step && step.waypoint) {
-      wpNode = <Text color={color}><Text color="blue">⬤</Text> Grab the <Text color="blue">waypoint</Text></Text>;
+      wpNode = <Text color={color}><Text color="blue">●</Text> Grab the <Text color="blue">waypoint</Text></Text>;
     }
 
     if (step && step.trial) {
