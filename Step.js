@@ -30,6 +30,7 @@ const Step = ({step, label}) => {
     let bossesNode = null;
     let rewardsNode = null;
     let wpNode = null;
+    let trialNode = null;
     let goNode = null;
     let notesNode = null;
 
@@ -50,11 +51,15 @@ const Step = ({step, label}) => {
     }
 
     if (step && step.waypoint) {
-      wpNode = <Text color={color}><Text color="blue">◎</Text> Grab the <Text color="blue">waypoint</Text></Text>;
+      wpNode = <Text color={color}><Text color="blue">⬤</Text> Grab the <Text color="blue">waypoint</Text></Text>;
+    }
+
+    if (step && step.trial) {
+      trialNode = <Text color={color}><Text color="cyan">⬤</Text> Do the <Text color="cyan">ascendency trial</Text> if needed</Text>;
     }
 
     if (step && step.port) {
-      goNode = <Text color={color}><Text color="blue">→</Text> Waypoint to <Text color="green">{step.port}</Text></Text>;
+      goNode = <Text color={color}><Text color="blue">→</Text> Port to <Text color="green">{step.port}</Text></Text>;
     }
 
     if (step && step.travel) {
@@ -62,7 +67,7 @@ const Step = ({step, label}) => {
     }
 
     if (step && step.sail) {
-      goNode = <Text color={color}><Text color="blueBright">→</Text> Sail to <Text color="greenBright">{step.travel}</Text></Text>;
+      goNode = <Text color={color}><Text color="blueBright">→</Text> Sail to <Text color="green">{step.sail}</Text></Text>;
     }
 
     if (step && step.tp) {
@@ -70,17 +75,18 @@ const Step = ({step, label}) => {
     }
 
     if (step && step.note) {
-      notesNode = <Text color={color} italic={true}>  {step.note}</Text>;
+      notesNode = <Text color={color}><Text color="magentaBright">!</Text> <Text italic={true}>{step.note}</Text></Text>;
     }
 
     stepNode = (
       <>
         <Text color={color}>{step.zone}</Text>
+        {notesNode}
         {wpNode}
         {areaNode}
         {bossesNode}
         {rewardsNode}
-        {notesNode}
+        {trialNode}
         {goNode}
       </>
     );
