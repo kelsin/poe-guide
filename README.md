@@ -2,6 +2,8 @@
 
 Small CLI tool to help with Path of Exile Leveling
 
+![Screenshot](screenshot.png "POE Guide Screenshot")
+
 ## Usage
 
 You run the tool once with the location of your game log as the `-l` parameter.
