@@ -42,7 +42,7 @@
     "data/zones.3.18.json",
     "cli.js",
     "config.js",
-    "hook.js",
+    "hooks.js",
     "Step.js",
     "Zone.js",
     "ui.js"
