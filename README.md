@@ -2,7 +2,7 @@
 
 Small CLI tool to help with Path of Exile Leveling
 
-![Screenshot](screenshot.png "POE Guide Screenshot")
+![Screenshot](screenshot.png?raw=true "POE Guide Screenshot")
 
 This app reads from the game's log file and will update what it's showing you
 based on the zones you travel to. It supports auto moving forward and backward
