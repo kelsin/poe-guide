@@ -9,6 +9,20 @@ based on the zones you travel to. It supports auto moving forward and backward
 from the current location automatically. If it gets stuck there are controls
 to move back and forward by act or step.
 
+## Installing
+
+You can install a windows .exe file from the [releases](releases) page on
+github, or globally install from a node.js installation:
+
+```sh
+npm install -g poe-guide
+```
+
+If you use the windows .exe you need to run it once with the `-l` flag
+(described below) and after that you can just double click to run as long as the
+default non-polling behavior works for you. If not make a shortcut with the `-p`
+flag added as described below.
+
 ## Usage
 
 You run the tool once with the location of your game log as the `-l` parameter.
