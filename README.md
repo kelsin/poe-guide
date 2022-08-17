@@ -47,3 +47,20 @@ I would love to eventually provide options where you can turn on or off
 different options (Such as "Do trials" or "All quests" or "Only passive quests"
 or "No extra quests") but for now it's just hardcoded to include all passive
 quests and the easiest of the non passive optionals.
+
+## Developing
+
+You need [Node.js](https://nodejs.org/en/) to run this app from source:
+
+```sh
+# Install yarn if you don't have it
+npm install -g yarn
+
+# Install dependencies
+yarn
+
+# Run the app
+./cli.js
+```
+
+I build the release exe files with [nexe](https://github.com/nexe/nexe).
