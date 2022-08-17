@@ -38,7 +38,13 @@
     "node": ">=10"
   },
   "files": [
+    "data/steps.3.18.json",
+    "data/zones.3.18.json",
     "cli.js",
+    "config.js",
+    "hook.js",
+    "Step.js",
+    "Zone.js",
     "ui.js"
   ],
   "license": "MIT",
