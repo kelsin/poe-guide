@@ -49,7 +49,7 @@
       "travel": "The Lower Prison"
     },{
       "zone": "The Lower Prison",
-      "waypoint": "true",
+      "waypoint": true,
       "port": "The Submerged Passage"
     },{
       "zone": "The Submerged Passage",
@@ -86,7 +86,6 @@
     },{
       "zone": "The Ship Graveyard",
       "waypoint": true,
-      "note": "Waypoint always near the entrace",
       "travel": "The Ship Graveyard Cave"
     },{
       "zone": "The Ship Graveyard Cave",
