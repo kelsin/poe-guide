@@ -139,7 +139,7 @@ const getData = (location, act, step) => {
 
 const initialData = getData(zones[0].name, 1, 0);
 
-const useData = (polling = false) => {
+const useData = () => {
   const [data, setData] = useState(initialData);
   const [deaths, setDeaths] = useState(0);
 
@@ -202,7 +202,7 @@ const useData = (polling = false) => {
       setDeaths(deaths + 1);
     });
 
-    const tail = new Tail(config.get('log'), {useWatchFile:polling, fsWatchOptions:{interval: 1000}});
+    const tail = new Tail(config.get('log'), {useWatchFile:true, fsWatchOptions:{interval: 1000}});
     tail.on("line", lineHandler);
     tail.on("error", errorHandler);
 

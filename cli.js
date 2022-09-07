@@ -14,7 +14,6 @@ const cli = meow(`
   Options
     --name  Your name
     --log, -l  The log file to parse
-    --poll, -p  Use polling to read the log file
 
   Examples
     $ poe-guide --name=Jane
@@ -24,10 +23,6 @@ const cli = meow(`
     log: {
       type: 'string',
       alias: 'l'
-    },
-    poll: {
-      type: 'boolean',
-      alias: 'p'
     }
   }
 });
@@ -37,4 +32,4 @@ if (cli.flags.log) {
 	config.set('log', cli.flags.log);
 }
 
-render(React.createElement(ui, {poll: cli.flags.poll}));
+render(React.createElement(ui));
